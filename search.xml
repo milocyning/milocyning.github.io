@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>一些linux基本命令</title>
+    <url>/docs/linux-command-daily/</url>
+    <content><![CDATA[<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><p>Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。<br>在linux下一般用scp这个命令来通过ssh传输文件。</p>
+<ol>
+<li>下载文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp username@servername:/home/remote/filename /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
+<li>上传文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp /home/<span class="built_in">local</span>/filename username@servername:/home/remote/</span><br></pre></td></tr></table></figure></li>
+<li>下载整个目录<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp -r username@servername:/home/remote/folder/ /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一些linux基本命令</title>
+    <url>/docs/linux-base-command/</url>
+    <content><![CDATA[<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><p>Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。<br>在linux下一般用scp这个命令来通过ssh传输文件。</p>
+<ol>
+<li>下载文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp username@servername:/home/remote/filename /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
+<li>上传文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp /home/<span class="built_in">local</span>/filename username@servername:/home/remote/</span><br></pre></td></tr></table></figure></li>
+<li>下载整个目录<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp -r username@servername:/home/remote/folder/ /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/docs/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
