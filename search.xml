@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>linux shell中/dev/null 2>&1标准流重定向</title>
-    <url>/docs/dev-null-std012/</url>
-    <content><![CDATA[<p>/dev/null（或称空设备）在类Unix系统中是一个特殊的设备文件，它丢弃一切写入其中的数据（但报告写入操作成功），读取它则会立即得到一个EOF。<br>Unix-like系统中，文件描述符0、1、2分别表示std::cin、std::cout和std::cerr。</p>
-<a id="more"></a>
-
-<p>举个例子：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ./main &gt; /dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure>
-
-<p>它将标准输出重定向到/dev/null，同时将标准错输出(2)重定向到标准输出(1)。联合起来，就是所有的结果都被重定向到/dev/null，终端上不会产生任何输出结果。</p>
-<p>References:</p>
-<ul>
-<li><a href="https://zh.wikipedia.org/wiki//dev/null" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki//dev/null</a></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/docs/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
