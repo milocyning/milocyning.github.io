@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="孟舆(Milo CYNING)">
 <meta property="og:description" content="繁多的linux命令，用到一些，总结一些。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-20T13:19:31.344Z">
+<meta property="og:updated_time" content="2019-11-20T13:30:29.216Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://www.googol-inc.com/docs/linux-command-daily/">
@@ -227,7 +227,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-11-20 00:01:36 / Modified: 21:19:31" itemprop="dateCreated datePublished" datetime="2019-11-20T00:01:36+08:00">2019-11-20</time>
+              <time title="Created: 2019-11-20 00:01:36 / Modified: 21:30:29" itemprop="dateCreated datePublished" datetime="2019-11-20T00:01:36+08:00">2019-11-20</time>
             </span>
 
           
@@ -254,7 +254,31 @@
 </ol>
 <h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><p>git是一个分散式版本控制软件，最初由Linus Torvalds创作，于2005年以GPL释出。</p>
 <ol>
-<li>clone<br>clone远程的master分支，同时只需要一层“.git信息”（主要可以有效的限制仓库大小）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b master --depth=1 https://github.com/torvalds/linux.git</span><br><span class="line">``` </span><br><span class="line">2. push</span><br><span class="line">将本地master分支推送到远程的dev分支</span><br><span class="line">```bash</span><br><span class="line">$ git push origin master:dev</span><br></pre></td></tr></table></figure></li>
+<li>clone<br>clone远程的master分支，同时只需要一层“.git信息”（主要可以有效的限制仓库大小）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b master --depth=1 https://github.com/torvalds/linux.git</span><br><span class="line">``` </span><br><span class="line">2. push</span><br><span class="line">将本地master分支推送到远程的dev分支</span><br><span class="line">```bash</span><br><span class="line">$ git push origin master:dev</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h1><p>将文件内容打印到终端</p>
+<ol>
+<li><p>默认</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ cat file.log</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>行号<br>加上行号输出文件到终端</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ cat -n file.log</span><br><span class="line">$ cat -b file.log  //这个对空白行不编号</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>只保留一行空白<br>如果文件中有连续多个空白行，将会只保留一行空白</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ cat -s file.log</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打印多个文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ cat bug.log fix.log</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="head"><a href="#head" class="headerlink" title="head"></a>head</h1><p>head命令默认显示一个file的前10行内容。</p>
+<ol>
+<li>默认前10行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ head file.log</span><br></pre></td></tr></table></figure></li>
+<li>显示前128行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ head -n 128 file.log</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 
     </div>
@@ -319,7 +343,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#scp"><span class="nav-number">1.</span> <span class="nav-text">scp</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git"><span class="nav-number">2.</span> <span class="nav-text">git</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#scp"><span class="nav-number">1.</span> <span class="nav-text">scp</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git"><span class="nav-number">2.</span> <span class="nav-text">git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cat"><span class="nav-number">3.</span> <span class="nav-text">cat</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#head"><span class="nav-number">4.</span> <span class="nav-text">head</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
