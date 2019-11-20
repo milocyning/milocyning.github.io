@@ -6,11 +6,17 @@
     <content><![CDATA[<p>繁多的linux命令，用到一些，总结一些。</p>
 <a id="more"></a>
 
-<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><p>Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。<br>在linux下一般用scp这个命令来通过ssh传输文件。</p>
+<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><p>Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。<br>在linux下一般用scp这个命令，通过ssh传输文件。</p>
 <ol>
 <li>下载文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp username@servername:/home/remote/filename /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
 <li>上传文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp /home/<span class="built_in">local</span>/filename username@servername:/home/remote/</span><br></pre></td></tr></table></figure></li>
-<li>下载整个目录<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp -r username@servername:/home/remote/folder/ /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
+<li>下载整个目录<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp -r username@servername:/home/remote/folder/ /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><p>git是一个分散式版本控制软件，最初由Linus Torvalds创作，于2005年以GPL释出。</p>
+<ol>
+<li>clone<br>clone远程的master分支，同时只需要一层“.git信息”（主要可以有效的限制仓库大小）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b master --depth=1 https://github.com/torvalds/linux.git</span><br><span class="line">``` </span><br><span class="line">2. push</span><br><span class="line">将本地master分支推送到远程的dev分支</span><br><span class="line">```bash</span><br><span class="line">$ git push origin master:dev</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <tags>
