@@ -3,7 +3,10 @@
   <entry>
     <title>一些linux基本命令</title>
     <url>/docs/linux-command-daily/</url>
-    <content><![CDATA[<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><p>Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。<br>在linux下一般用scp这个命令来通过ssh传输文件。</p>
+    <content><![CDATA[<p>繁多的linux命令，用到一些，总结一些。</p>
+<a id="more"></a>
+
+<h1 id="scp"><a href="#scp" class="headerlink" title="scp"></a>scp</h1><p>Secure Shell（安全外壳协议，简称SSH）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境。<br>在linux下一般用scp这个命令来通过ssh传输文件。</p>
 <ol>
 <li>下载文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp username@servername:/home/remote/filename /home/<span class="built_in">local</span>/folder/</span><br></pre></td></tr></table></figure></li>
 <li>上传文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ scp /home/<span class="built_in">local</span>/filename username@servername:/home/remote/</span><br></pre></td></tr></table></figure></li>
